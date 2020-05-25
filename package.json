@@ -4,7 +4,8 @@
   "description": "Homepage for Kosaka@Shiori Labs",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html --port 4200"
+    "dev": "parcel src/index.html --port 4200",
+    "build": "rimraf dist && parcel build src/index.html -d dist"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2"
   }
 }
